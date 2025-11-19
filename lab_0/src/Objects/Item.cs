@@ -13,4 +13,10 @@ public struct Item
     {
         return Name + $": {Price} токенов";
     }
+
+    public override int GetHashCode()
+    {
+        //TODO
+        return base.GetHashCode();
+    }
 }
