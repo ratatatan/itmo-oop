@@ -11,7 +11,6 @@ public class Player
 
     public Weapon? EquippedWeapon { get; private set; }
     public Armor? EquippedArmor { get; private set; }
-    public Inventory Inventory { get; }
 
     public bool IsAlive => _hp > 0;
 
@@ -20,7 +19,6 @@ public class Player
         Name = name;
         MaxHP = maxHp;
         _hp = maxHp;
-        Inventory = new Inventory(this);
     }
 
     public void EquipWeapon(Weapon weapon)
